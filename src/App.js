@@ -19,12 +19,7 @@ import { UserAuthContextProvider } from "./Components/UserAuthContext";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
-import ProductDetails from "./Pages/ProductDetails";
-// import PrintbaseSolutions from "./Pages/PrintbaseSolutions";
-import HomDecor from "./Pages/HomDecor";
-import CV from "./Pages/CV";
-import Dashboard from "./Pages/Dashboard";
-import Jobite from "./Pages/Jobite";
+
 import CryptoO from "./Pages/CryptoO";
 
 // const AddToCart = (item) => {
@@ -81,7 +76,7 @@ function App() {
             <Route path="/" Component={CryptoO} exact />
             {/* <Route path="/" Component={Dashboard} exact /> */}
             <Route path="/a" Component={NotFound} />
-            <Route path="/productDetail/:id" Component={ProductDetails} />
+            {/* <Route path="/productDetail/:id" Component={ProductDetails} /> */}
             <Route Component={NotFound} />
           </Routes>
         </UserAuthContextProvider>
